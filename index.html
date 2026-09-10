@@ -3,364 +3,715 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Peridot Health Diagnostics provides ultrasound scans and laboratory testing in Makogi Road, Ogun State.">
-    <title>Peridot Health Diagnostics | Scan &amp; Lab</title>
-    <link rel="icon" href="images/Peridot.png" type="image/png">
+
+    <meta
+        name="description"
+        content="Peridot Health Diagnostics Services - Reliable diagnostic testing and laboratory services."
+    >
+
+    <title>Peridot Health Diagnostics</title>
+
+    <link rel="icon" href="images/Peridot.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
     <link rel="stylesheet" href="styles.css">
+
+    <script src="https://unpkg.com/lucide@latest"></script>
 </head>
+
 <body>
-    <header class="navbar" id="site-header">
-        <nav class="container nav-shell" aria-label="Primary navigation">
-            <a class="nav-brand" href="#top" aria-label="Peridot Health Diagnostics home">
-                <span class="logo-frame">
-                    <img src="images/Peridot.png" alt="Peridot Health Diagnostics Lab and Scan logo" decoding="async" loading="lazy">
-                </span>
-                <span class="brand-copy">
-                    <span class="brand-name">Peridot</span>
-                    <span class="brand-tagline">Health diagnostics</span>
-                </span>
+
+    <!-- NAVBAR -->
+    <header class="navbar" id="navbar">
+        <div class="container nav-shell">
+
+            <a href="#home" class="nav-brand">
+                <div class="logo-frame">
+                    <img src="images/Peridot.png" alt="Peridot Health Diagnostics logo">
+                </div>
+
+                <div class="brand-copy">
+                    <strong class="brand-name">PERIDOT</strong>
+                    <span class="brand-tagline">HEALTH DIAGNOSTICS</span>
+                </div>
             </a>
 
-            <button class="menu-toggle" id="menuToggle" type="button" aria-label="Open navigation" aria-controls="navMenu" aria-expanded="false">
+            <button
+                class="menu-toggle"
+                id="menuToggle"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+            >
                 <span></span>
                 <span></span>
                 <span></span>
             </button>
 
-            <ul class="nav-menu" id="navMenu">
-                <li><a href="#services">Services</a></li>
-                <li><a href="#route">How it works</a></li>
-                <li><a href="#visit">Visit</a></li>
-                <li><a class="nav-book" href="#book">Book a test <i class="icon" aria-hidden="true" data-lucide="arrow-up-right"></i></a></li>
-            </ul>
-        </nav>
+            <nav class="nav-menu" id="navMenu">
+                <a href="#services">Services</a>
+                <a href="#how-it-works">How it works</a>
+                <a href="#visit">Visit</a>
+                <a href="#booking" class="nav-book">Book a test</a>
+            </nav>
+
+        </div>
     </header>
 
-    <main id="top">
-        <section class="hero" aria-labelledby="hero-title">
-            <div class="hero-vertical-line hero-vertical-line--left" aria-hidden="true"></div>
-            <div class="hero-vertical-line hero-vertical-line--right" aria-hidden="true"></div>
-            <div class="hero-corner-mark" aria-hidden="true"></div>
 
-            <div class="container hero-grid">
+    <!-- HERO -->
+    <main>
+
+        <section class="hero" id="home">
+            <div class="hero-grid container">
+
                 <div class="hero-copy">
-                    <div class="section-kicker section-kicker--mint">
-                        <span>01 / diagnostics, clearly</span>
-                        <span class="kicker-rule" aria-hidden="true"></span>
-                    </div>
-                    <h1 id="hero-title" tabindex="-1">Diagnostics,<br><span>without</span><br>guesswork.</h1>
-                    <p class="hero-description">Peridot provides ultrasound scans and laboratory testing with a clear path from your first question to a result you can act on.</p>
+
+                    <span class="section-kicker">
+                        <span class="kicker-rule"></span>
+                        HEALTH DIAGNOSTICS
+                    </span>
+
+                    <h1>
+                        Diagnostics,
+                        <span>without guesswork.</span>
+                    </h1>
+
+                    <p class="hero-description">
+                        Accurate laboratory and diagnostic services designed
+                        to help you understand your health with confidence.
+                    </p>
+
                     <div class="hero-actions">
-                        <a class="btn btn-primary" href="#book">Book a scan or lab test <i class="icon" aria-hidden="true" data-lucide="arrow-up-right"></i></a>
-                        <a class="text-link text-link--light" href="tel:+2348084744177">Call the clinic <i class="icon" aria-hidden="true" data-lucide="phone"></i></a>
+                        <a href="#booking" class="btn btn-primary">
+                            Book a test
+                            <i data-lucide="arrow-up-right"></i>
+                        </a>
+
+                        <a href="#services" class="text-link">
+                            Explore services
+                            <i data-lucide="arrow-down"></i>
+                        </a>
                     </div>
-                    <div class="hero-info-bar" aria-label="Clinic availability and location">
+
+                    <div class="hero-info-bar">
+
                         <div class="hero-info-item">
-                            <span class="signal-dot" aria-hidden="true"></span>
-                            <span>
-                                <span class="micro-label micro-label--mint">Open today</span>
-                                <span class="info-value">Mon–Sat · 8am–8pm</span>
-                            </span>
+                            <span class="signal-dot"></span>
+                            Reliable diagnostics
                         </div>
-                        <span class="info-divider" aria-hidden="true"></span>
+
+                        <span class="info-divider"></span>
+
                         <div class="hero-info-item">
-                            <i class="icon" aria-hidden="true" data-lucide="map-pin"></i>
-                            <span>
-                                <span class="micro-label micro-label--dim">Find us</span>
-                                <span class="info-value">Makogi Road, Ogun State</span>
-                            </span>
+                            <i data-lucide="clock"></i>
+                            Convenient scheduling
                         </div>
+
                     </div>
+
                 </div>
 
-                <figure class="hero-media">
-                    <span class="media-label">01 / imaging</span>
+
+                <div class="hero-media">
+
                     <div class="scan-field">
-                        <div class="scan-frame">
-                            <img src="images/Peridot 2.png" alt="Clinician performing an ultrasound scan for a patient" decoding="async" loading="lazy">
-                            <div class="media-proof-tag">
-                                <span class="signal-dot" aria-hidden="true"></span>
-                                <span class="micro-label">Clinical proof</span>
-                            </div>
-                            <div class="media-crosshair" aria-hidden="true">
-                                <span></span><span></span><span></span><span></span>
-                            </div>
-                            <figcaption class="media-caption">
-                                <span>Ultrasound imaging</span>
-                                <span class="micro-label">Peridot / 2024</span>
-                            </figcaption>
+
+                        <img
+                            src="images/Peridot 2.png"
+                            alt="Peridot Health Diagnostics"
+                        >
+
+                        <div class="scan-frame"></div>
+
+                        <div class="media-label">
+                            <span></span>
+                            DIAGNOSTIC CARE
                         </div>
+
+                        <div class="media-proof-tag">
+                            <i data-lucide="shield-check"></i>
+                            QUALITY CARE
+                        </div>
+
                     </div>
-                    <div class="hero-chips" aria-label="Peridot service categories">
-                        <span class="chip chip--mint">SCAN</span>
-                        <span class="chip chip--pale">LAB</span>
-                    </div>
-                    <div class="media-subcaption">
-                        <span class="micro-label micro-label--dim">A clearer route starts here</span>
-                        <span class="micro-label micro-label--dim">02—04</span>
-                    </div>
-                </figure>
+
+                    <p class="media-caption">
+                        Modern diagnostic services with a patient-first approach.
+                    </p>
+
+                </div>
+
             </div>
         </section>
 
-        <section class="services" id="services" aria-labelledby="services-title">
-            <div class="container services-layout">
-                <div class="services-intro">
-                    <span class="micro-label micro-label--mint">02 / choose a route</span>
-                    <h2 id="services-title" tabindex="-1">Choose your clarity path.</h2>
-                    <p>Start with the service that matches your next question. We will help you understand what happens next.</p>
-                    <div class="section-signature" aria-hidden="true">
-                        <span></span>
-                        <span class="micro-label micro-label--dim">Exactly two ways in</span>
+
+        <!-- SERVICES -->
+        <section class="services section" id="services">
+
+            <div class="container">
+
+                <div class="section-heading-row">
+
+                    <div>
+                        <span class="micro-label micro-label--mint">
+                            OUR SERVICES
+                        </span>
+
+                        <h2>
+                            Testing that gives<br>
+                            <span>clarity.</span>
+                        </h2>
                     </div>
+
+                    <p>
+                        From laboratory testing to diagnostic scans,
+                        we provide dependable services to support better
+                        healthcare decisions.
+                    </p>
+
                 </div>
+
 
                 <div class="service-panels">
+
                     <article class="service-panel service-panel--scan">
+
                         <div class="panel-topline">
-                            <span class="service-icon service-icon--dark"><i class="icon" aria-hidden="true" data-lucide="scan-line"></i></span>
-                            <span class="micro-label service-number">Service / 01</span>
-                        </div>
-                        <div class="panel-copy">
-                            <h3>Scan</h3>
-                            <p>See more clearly with guided ultrasound imaging and a team that explains the picture in plain language.</p>
-                            <div class="service-tags" aria-label="Scan services">
-                                <span>Ultrasound</span>
-                                <span>Obstetrics</span>
-                                <span>Abdominal</span>
+                            <span class="service-number">01</span>
+
+                            <div class="service-icon service-icon--dark">
+                                <i data-lucide="scan-line"></i>
                             </div>
                         </div>
-                        <a class="service-link" href="#book">Explore scan services <i class="icon" aria-hidden="true" data-lucide="arrow-up-right"></i></a>
+
+                        <div class="panel-copy">
+
+                            <h3>Diagnostic Scans</h3>
+
+                            <p>
+                                Clear and dependable imaging services
+                                to help healthcare professionals understand
+                                what is happening inside the body.
+                            </p>
+
+                            <div class="service-tags">
+                                <span>Imaging</span>
+                                <span>Diagnostics</span>
+                            </div>
+
+                        </div>
+
                     </article>
+
 
                     <article class="service-panel service-panel--lab">
+
                         <div class="panel-topline">
-                            <span class="service-icon service-icon--mint"><i class="icon" aria-hidden="true" data-lucide="test-tube-2"></i></span>
-                            <span class="micro-label service-number">Service / 02</span>
-                        </div>
-                        <div class="panel-copy">
-                            <h3>Lab</h3>
-                            <p>Get the evidence behind the question with focused laboratory testing and results you can follow.</p>
-                            <div class="service-tags" aria-label="Laboratory services">
-                                <span>Blood</span>
-                                <span>Urine</span>
-                                <span>Stool</span>
+                            <span class="service-number">02</span>
+
+                            <div class="service-icon service-icon--mint">
+                                <i data-lucide="test-tubes"></i>
                             </div>
                         </div>
-                        <a class="service-link" href="#book">Explore lab services <i class="icon" aria-hidden="true" data-lucide="arrow-up-right"></i></a>
+
+                        <div class="panel-copy">
+
+                            <h3>Laboratory Services</h3>
+
+                            <p>
+                                Laboratory testing focused on accurate
+                                results and reliable information for
+                                informed healthcare decisions.
+                            </p>
+
+                            <div class="service-tags">
+                                <span>Lab Testing</span>
+                                <span>Results</span>
+                            </div>
+
+                        </div>
+
                     </article>
+
                 </div>
+
             </div>
+
         </section>
 
-        <section class="route" id="route" aria-labelledby="route-title">
+
+        <!-- HOW IT WORKS -->
+        <section class="route section" id="how-it-works">
+
             <div class="container">
+
                 <div class="section-heading-row">
+
                     <div>
-                        <span class="micro-label micro-label--mint">A simple route</span>
-                        <h2 id="route-title" tabindex="-1">A simple route to results.</h2>
+                        <span class="micro-label">
+                            SIMPLE PROCESS
+                        </span>
+
+                        <h2>
+                            Your route to<br>
+                            <span>clarity.</span>
+                        </h2>
                     </div>
-                    <p>No maze of menus. Choose a service, visit the clinic, and leave with the next step in view.</p>
+
+                    <p>
+                        Getting the diagnostic care you need
+                        doesn't have to be complicated.
+                    </p>
+
                 </div>
+
+
                 <div class="process-steps">
-                    <article class="process-step">
+
+                    <div class="process-step">
+
                         <span class="step-number">01</span>
-                        <h3>Choose your test</h3>
-                        <p>Select Scan or Lab and call ahead if you need help deciding.</p>
-                    </article>
-                    <article class="process-step">
+
+                        <div>
+                            <h3>Choose your service</h3>
+                            <p>
+                                Select the diagnostic or laboratory
+                                service you need.
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="process-step">
+
                         <span class="step-number">02</span>
-                        <h3>Visit the clinic</h3>
-                        <p>Come to Temi Asese Street during open hours for a focused, human handoff.</p>
-                    </article>
-                    <article class="process-step">
+
+                        <div>
+                            <h3>Book your visit</h3>
+                            <p>
+                                Choose a convenient date and time
+                                for your appointment.
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="process-step">
+
                         <span class="step-number">03</span>
-                        <h3>Receive your result</h3>
-                        <p>Get a clear result and the information you need for your next conversation.</p>
-                    </article>
+
+                        <div>
+                            <h3>Get your test</h3>
+                            <p>
+                                Visit Peridot and receive professional
+                                diagnostic care.
+                            </p>
+                        </div>
+
+                    </div>
+
                 </div>
+
             </div>
+
         </section>
 
-        <section class="visit" id="visit" aria-labelledby="visit-title">
+
+        <!-- VISIT -->
+        <section class="visit section" id="visit">
+
             <div class="container visit-grid">
+
                 <div class="visit-intro">
-                    <span class="micro-label micro-label--mint">Visit Peridot</span>
-                    <h2 id="visit-title" tabindex="-1">The useful details, before you go.</h2>
-                    <p>A real clinic address, real opening hours, and two direct lines to a person who can point you in the right direction.</p>
+
+                    <span class="micro-label micro-label--mint">
+                        VISIT US
+                    </span>
+
+                    <h2>
+                        We're here<br>
+                        <span>to help.</span>
+                    </h2>
+
+                    <p>
+                        Reach out to us or visit our diagnostic centre
+                        for reliable healthcare services.
+                    </p>
+
                 </div>
+
+
                 <div class="visit-info">
+
                     <div class="visit-row">
-                        <span class="micro-label micro-label--mint">Call</span>
-                        <div class="phone-links">
-                            <a href="tel:+2348066839141">0806 683 9141</a>
-                            <a href="tel:+2348084744177">0808 474 4177</a>
+
+                        <i data-lucide="map-pin"></i>
+
+                        <div>
+                            <span>LOCATION</span>
+                            <p>
+                                Peridot Health Diagnostics Services
+                            </p>
                         </div>
+
                     </div>
+
+
                     <div class="visit-row">
-                        <span class="micro-label micro-label--mint">Find us</span>
-                        <p>1, Temi Asese Street, opposite Redeem Church (T.O.J), before Tosho, Makogi Road</p>
-                    </div>
-                    <div class="visit-row visit-row--hours">
-                        <span class="micro-label micro-label--mint">Hours</span>
-                        <div class="hours-grid">
-                            <p><span>Mon–Sat</span><strong>8am–8pm</strong></p>
-                            <p><span>Sunday</span><strong>12pm–6pm</strong></p>
+
+                        <i data-lucide="phone"></i>
+
+                        <div>
+                            <span>PHONE</span>
+
+                            <div class="phone-links">
+                                <a href="tel:+2348066839141">
+                                    +234 806 683 9141
+                                </a>
+
+                                <a href="tel:+2348084744177">
+                                    +234 808 474 4177
+                                </a>
+                            </div>
                         </div>
+
                     </div>
+
+
+                    <div class="visit-row">
+
+                        <i data-lucide="clock"></i>
+
+                        <div>
+                            <span>OPENING HOURS</span>
+
+                            <div class="hours-grid">
+                                <p>Mon – Fri</p>
+                                <strong>8:00 AM – 5:00 PM</strong>
+
+                                <p>Saturday</p>
+                                <strong>9:00 AM – 2:00 PM</strong>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <a
+                        href="https://www.google.com/maps/place/PERIDOT+HEALTH+DIAGNOSTICS+SERVICES/@6.7380934,3.3937137,17z/data=!4m14!1m7!3m6!1s0x103b9513be69d9d7:0x117e9d79213218af!2sPERIDOT+HEALTH+DIAGNOSTICS+SERVICES!8m2!3d6.7375022!4d3.3934707!16s%2Fg%2F11ynqpvdp9!3m5!1s0x103b9513be69d9d7:0x117e9d79213218af!8m2!3d6.7375022!4d3.3934707!16s%2Fg%2F11ynqpvdp9?entry=ttu&g_ep=EgoyMDI2MDkwNi4wIKXMDSoASAFQAw%3D%3D"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="btn btn-whatsapp map-button"
+                    >
+                        <i data-lucide="map"></i>
+                        Get directions
+                    </a>
+
                 </div>
+
             </div>
+
         </section>
 
-        <section class="booking" id="book" aria-labelledby="book-title">
+
+        <!-- BOOKING -->
+        <section class="booking section" id="booking">
+
             <div class="container booking-inner">
+
                 <div class="booking-copy">
-                    <span class="micro-label micro-label--forest">05 / your next step</span>
-                    <h2 id="book-title" tabindex="-1">Ready for a clearer answer?</h2>
-                    <p>Tell us whether you need a Scan or Lab test. We’ll help you choose the right route and confirm your visit by phone.</p>
+
+                    <span class="micro-label micro-label--mint">
+                        BOOK A TEST
+                    </span>
+
+                    <h2>
+                        Take the next<br>
+                        <span>step.</span>
+                    </h2>
+
+                    <p>
+                        Tell us what you need and choose a convenient
+                        time for your visit.
+                    </p>
+
+                    <div class="booking-note">
+                        <i data-lucide="info"></i>
+                        <span>
+                            Your booking request will be reviewed
+                            by our team.
+                        </span>
+                    </div>
+
                 </div>
+
 
                 <div class="booking-panel">
-                    <form class="booking-form" id="bookingForm" novalidate aria-describedby="bookingFormHelp">
+
+                    <form class="booking-form">
+
                         <div class="booking-form-heading">
-                            <span class="micro-label micro-label--mint">Request a visit</span>
-                            <h3>Tell us what you need.</h3>
-                            <p id="bookingFormHelp">Share a few details and the clinic team will help confirm the next step.</p>
+                            <span>01</span>
+                            <h3>Choose a service</h3>
                         </div>
 
-                        <fieldset class="form-fieldset" id="serviceFieldset" aria-describedby="serviceHelp serviceError">
-                            <legend>Which service do you need?<span class="required-mark" aria-hidden="true"> *</span><span class="visually-hidden"> Required</span></legend>
-                            <p class="field-help" id="serviceHelp">Choose one route to get started.</p>
-                            <div class="service-choice-grid">
-                                <label class="service-choice" for="serviceScan">
-                                    <input id="serviceScan" name="service" type="radio" value="Scan" required>
-                                    <span class="service-choice-copy">
-                                        <strong>Scan</strong>
-                                        <small>Ultrasound imaging</small>
-                                    </span>
-                                    <span class="service-choice-mark" aria-hidden="true"><i class="icon" data-lucide="check"></i></span>
-                                </label>
-                                <label class="service-choice" for="serviceLab">
-                                    <input id="serviceLab" name="service" type="radio" value="Lab" required>
-                                    <span class="service-choice-copy">
-                                        <strong>Lab</strong>
-                                        <small>Focused testing</small>
-                                    </span>
-                                    <span class="service-choice-mark" aria-hidden="true"><i class="icon" data-lucide="check"></i></span>
-                                </label>
-                            </div>
-                            <p class="form-error" id="serviceError" role="alert"></p>
-                        </fieldset>
+
+                        <div class="service-choice-grid">
+
+                            <label class="service-choice">
+
+                                <input
+                                    type="radio"
+                                    name="service"
+                                    value="Diagnostic Scans"
+                                >
+
+                                <div class="service-choice-mark"></div>
+
+                                <div class="service-choice-copy">
+                                    <strong>Diagnostic Scans</strong>
+                                    <span>Imaging services</span>
+                                </div>
+
+                            </label>
+
+
+                            <label class="service-choice">
+
+                                <input
+                                    type="radio"
+                                    name="service"
+                                    value="Laboratory Services"
+                                >
+
+                                <div class="service-choice-mark"></div>
+
+                                <div class="service-choice-copy">
+                                    <strong>Laboratory Services</strong>
+                                    <span>Lab testing</span>
+                                </div>
+
+                            </label>
+
+                        </div>
+
+
+                        <div class="booking-form-heading">
+                            <span>02</span>
+                            <h3>Your details</h3>
+                        </div>
+
 
                         <div class="form-grid">
+
                             <div class="form-field">
-                                <label for="fullName">Full name<span class="required-mark" aria-hidden="true"> *</span><span class="visually-hidden"> Required</span></label>
-                                <input id="fullName" name="fullName" type="text" autocomplete="name" placeholder="e.g. Ada Okafor" required aria-describedby="fullNameError">
-                                <p class="form-error" id="fullNameError" role="alert"></p>
+
+                                <label for="name">Full name</label>
+
+                                <input
+                                    type="text"
+                                    id="name"
+                                    name="name"
+                                    placeholder="Your name"
+                                    required
+                                >
+
                             </div>
+
+
                             <div class="form-field">
-                                <label for="phone">Phone number<span class="required-mark" aria-hidden="true"> *</span><span class="visually-hidden"> Required</span></label>
-                                <input id="phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" placeholder="0815 992 5737" required aria-describedby="phoneHelp phoneError">
-                                <p class="field-help" id="phoneHelp">We’ll call to confirm your visit.</p>
-                                <p class="form-error" id="phoneError" role="alert"></p>
+
+                                <label for="phone">Phone number</label>
+
+                                <input
+                                    type="tel"
+                                    id="phone"
+                                    name="phone"
+                                    placeholder="080 000 0000"
+                                    required
+                                >
+
                             </div>
+
+
                             <div class="form-field">
-                                <label for="visitDate">Preferred date<span class="required-mark" aria-hidden="true"> *</span><span class="visually-hidden"> Required</span></label>
-                                <input id="visitDate" name="visitDate" type="date" required aria-describedby="visitDateError">
-                                <p class="form-error" id="visitDateError" role="alert"></p>
+
+                                <label for="date">Preferred date</label>
+
+                                <input
+                                    type="date"
+                                    id="date"
+                                    name="date"
+                                    required
+                                >
+
                             </div>
+
+
                             <div class="form-field">
-                                <label for="preferredTime">Preferred time<span class="required-mark" aria-hidden="true"> *</span><span class="visually-hidden"> Required</span></label>
-                                <select id="preferredTime" name="preferredTime" required aria-describedby="preferredTimeError">
-                                    <option value="">Choose a time</option>
-                                    <option value="8am–10am">8am–10am</option>
-                                    <option value="10am–12pm">10am–12pm</option>
-                                    <option value="12pm–2pm">12pm–2pm</option>
-                                    <option value="2pm–4pm">2pm–4pm</option>
-                                    <option value="4pm–6pm">4pm–6pm</option>
-                                    <option value="6pm–8pm">6pm–8pm</option>
+
+                                <label for="time">Preferred time</label>
+
+                                <select
+                                    id="time"
+                                    name="time"
+                                    required
+                                >
+                                    <option value="">Select time</option>
+                                    <option value="8:00 AM">8:00 AM</option>
+                                    <option value="9:00 AM">9:00 AM</option>
+                                    <option value="10:00 AM">10:00 AM</option>
+                                    <option value="11:00 AM">11:00 AM</option>
+                                    <option value="12:00 PM">12:00 PM</option>
+                                    <option value="1:00 PM">1:00 PM</option>
+                                    <option value="2:00 PM">2:00 PM</option>
+                                    <option value="3:00 PM">3:00 PM</option>
+                                    <option value="4:00 PM">4:00 PM</option>
                                 </select>
-                                <p class="form-error" id="preferredTimeError" role="alert"></p>
+
                             </div>
+
+
                             <div class="form-field form-field--wide">
-                                <label for="notes">Anything else we should know?<span class="optional-mark"> Optional</span></label>
-                                <textarea id="notes" name="notes" rows="3" maxlength="300" placeholder="Add a short note about your request"></textarea>
+
+                                <label for="notes">Additional notes</label>
+
+                                <textarea
+                                    id="notes"
+                                    name="notes"
+                                    rows="4"
+                                    placeholder="Anything we should know?"
+                                ></textarea>
+
                             </div>
+
                         </div>
+
 
                         <div class="form-footer">
-                            <button class="btn btn-primary booking-submit" type="submit">Request a booking <i class="icon" aria-hidden="true" data-lucide="arrow-up-right"></i></button>
-                            <a class="form-phone-link" href="tel:+2348066839141">Call instead <i class="icon" aria-hidden="true" data-lucide="phone"></i></a>
+
+                            <button
+                                type="submit"
+                                class="btn btn-primary booking-submit"
+                            >
+                                Request booking
+                                <i data-lucide="arrow-up-right"></i>
+                            </button>
+
+                            <p>
+                                We'll contact you to confirm your appointment.
+                            </p>
+
                         </div>
-                        <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+
                     </form>
 
-                    <div class="booking-success" id="bookingSuccess" role="status" aria-live="polite" hidden tabindex="-1">
-                        <span class="success-icon" aria-hidden="true"><i class="icon" data-lucide="check"></i></span>
+
+                    <!-- SUCCESS -->
+                    <div class="booking-success">
+
+                        <div class="success-icon">
+                            <i data-lucide="check"></i>
+                        </div>
+
                         <div class="success-copy">
-                            <span class="micro-label micro-label--mint">Request ready</span>
-                            <h3>Thanks, <span data-booking-name>there</span>.</h3>
-                            <p>Your <strong data-booking-service>test</strong> request is ready. Send it on WhatsApp and the clinic team will confirm the visit details.</p>
+                            <span class="micro-label micro-label--mint">
+                                REQUEST RECEIVED
+                            </span>
+
+                            <h3>You're almost there.</h3>
+
+                            <p>
+                                Your booking request has been prepared.
+                                We'll contact you to confirm the details.
+                            </p>
                         </div>
-                        <div class="success-actions">
-                            <a class="btn btn-whatsapp" id="whatsappBookingLink" href="https://wa.me/2348084744177" target="_blank" rel="noopener noreferrer">Message on WhatsApp <i class="icon" aria-hidden="true" data-lucide="message-circle"></i></a>
-                            <a class="success-call-link" href="tel:+2348066839141">Call instead <i class="icon" aria-hidden="true" data-lucide="phone"></i></a>
-                            <button class="text-button" id="resetBooking" type="button">Make another request</button>
-                        </div>
+
+                        <button class="text-button" type="button">
+                            Book another test
+                        </button>
+
                     </div>
+
                 </div>
+
             </div>
+
         </section>
+
     </main>
 
-    <footer class="footer" aria-label="Footer">
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
         <div class="container footer-main">
-            <a class="footer-brand" href="#top" aria-label="Peridot Health Diagnostics home">
-                <span class="logo-frame logo-frame--small">
-                    <img src="images/Peridot.png" alt="Peridot Health Diagnostics Lab and Scan logo" decoding="async" loading="lazy">
-                </span>
-                <span>
-                    <span class="footer-brand-name">Peridot</span>
-                    <span class="micro-label micro-label--dim">Health diagnostics</span>
-                </span>
-            </a>
-            <div class="footer-links">
-                <a href="#services">Services</a>
-                <a href="#visit">Visit</a>
-                <span>Scan / Lab</span>
-                <span>© 2026 Peridot</span>
+
+            <div>
+                <a href="#home" class="nav-brand">
+
+                    <div class="logo-frame logo-frame--small">
+                        <img
+                            src="images/Peridot.png"
+                            alt="Peridot logo"
+                        >
+                    </div>
+
+                    <div class="brand-copy">
+                        <strong class="brand-name">PERIDOT</strong>
+                        <span class="brand-tagline">
+                            HEALTH DIAGNOSTICS
+                        </span>
+                    </div>
+
+                </a>
+
+                <p class="footer-description">
+                    Reliable diagnostics. Clearer healthcare decisions.
+                </p>
             </div>
+
+
+            <div class="footer-links">
+
+                <a href="#services">Services</a>
+                <a href="#how-it-works">How it works</a>
+                <a href="#visit">Visit</a>
+                <a href="#booking">Book a test</a>
+
+            </div>
+
         </div>
-        <div class="container footer-rule" aria-hidden="true"></div>
+
+
+        <div class="container footer-rule"></div>
+
+
         <div class="container footer-meta">
-            <span>Clear care starts with clear information.</span>
-           ```html
-<div style="text-align: center; margin-top: 20px;">
 
-  <a href="https://www.google.com/maps/place/PERIDOT+HEALTH+DIAGNOSTICS+SERVICES/@6.7380934,3.3937137,17.49z/data=!4m14!1m7!3m6!1s0x103b9513be69d9d7:0x117e9d79213218af!2sPERIDOT+HEALTH+DIAGNOSTICS+SERVICES!8m2!3d6.7375022!4d3.3934707!16s%2Fg%2F11ynqpvdp9!3m5!1s0x103b9513be69d9d7:0x117e9d79213218af!8m2!3d6.7375022!4d3.3934707!16s%2Fg%2F11ynqpvdp9?entry=ttu&g_ep=EgoyMDI2MDkwMi4wIKXMDSoASAFQAw%3D%3D"
-     target="_blank"
-     style="
-       display: inline-block;
-       padding: 14px 28px;
-       background: #16a34a;
-       color: white;
-       text-decoration: none;
-       font-family: Arial, sans-serif;
-       font-size: 16px;
-       font-weight: bold;
-       border-radius: 10px;
-       box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-     ">
-     📍 View Location
-  </a>
+            <span>
+                © <span data-year></span> Peridot Health Diagnostics
+            </span>
 
-</div>
-
+            <span>
+                Built with care.
+            </span>
 
         </div>
+
     </footer>
 
-    <script src="https://unpkg.com/lucide@latest"></script>
+
     <script src="script.js"></script>
+
 </body>
 </html>
